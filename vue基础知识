@@ -1,0 +1,27 @@
+生命周期钩子(函数)：
+beforeCreate,实例初始化之后
+create，实例创建完成之后被调用
+beforeMount，在挂载开始之前被调用
+mounted, el被新创建的vm.$el替换，挂载到实例上
+beforeUpdate,数据更新时调用
+updated,数据更新之后调用
+beforeDestroy，实例销毁之前调用
+destroyed，实例销毁之后调用
+
+
+API------------
+Vue.extend(options):创建一个构造器
+Vue.set(target,key,value)：设置对象的属性
+Vue.directive(id,[definition]):注册或获取全局指令
+Vue.filter(id,[definition]):过滤器--注册全局过滤器
+Vue.component(id,[definition]):注册或获取全局组件，注册还会自动使用给定的id设置组件的名称
+
+
+
+实例属性-------------------
+vm.$data: 数据对象
+vm.$props:组件接受到的props对象
+vm.$el: 实例使用的根DOM元素
+vm.$slots:访问被插槽分发的内容
+vm.refs: 引向子组件
+is特性： 添加一个字符串模板
